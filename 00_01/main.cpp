@@ -3,7 +3,7 @@
 int main()
 {
 
-    char str[] = "熱いね";
+    char str[] = "最恐！！！！！ふぉーーーーー";
 
     printf("%s", str);
 

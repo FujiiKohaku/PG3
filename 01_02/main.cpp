@@ -13,7 +13,7 @@ bool compareStudent(const string& a, const string& b)
 {
     int yearA = stoi(a.substr(1, 3)); // 文字列.substr(開始位置, 取り出す文字数)
     int yearB = stoi(b.substr(1, 3));
-    if (yearA != yearB) {
+    if (yearA != yearB) { // なぜif文があるかそれは学年を先にするため
         return yearA < yearB;
     }
 

@@ -13,7 +13,7 @@ int RecursiveWage(int hour)
     if (hour == 1) {
         return 100; // 最初の1時間
     }
-    return RecursiveWage(hour - 1) * 2 + 50; // 次の時間の計算
+    return RecursiveWage(hour - 1) * 2 - 50; // 次の時間の計算
 }
 
 // 再帰的な賃金を「合計」で求める

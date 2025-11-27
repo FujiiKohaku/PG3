@@ -70,15 +70,15 @@ int main()
     // }
 
     //// カフェの注文料金を計算するプログラム
-    //int drink; // 飲み物の種類
-    //int isTopping; // トッピングの有無
+    // int drink; // 飲み物の種類
+    // int isTopping; // トッピングの有無
 
-    //std::cout << "飲み物を選んでください" << std::endl;
-    //std::cin >> drink;
-    //std::cout << "トッピングはしますか？ するなら1、しないなら2を入力してください" << std::endl;
-    //std::cin >> isTopping;
+    // std::cout << "飲み物を選んでください" << std::endl;
+    // std::cin >> drink;
+    // std::cout << "トッピングはしますか？ するなら1、しないなら2を入力してください" << std::endl;
+    // std::cin >> isTopping;
 
-    //if (isTopping == 1) { // トッピングあり
+    // if (isTopping == 1) { // トッピングあり
 
     //    if (drink == 1) {
     //        std::cout << "コーヒートッピングあり350円" << std::endl;
@@ -89,7 +89,7 @@ int main()
     //        std::cout << "ジューストッピングあり250円" << std::endl;
     //    }
     //}
-    //if (isTopping == 2) {
+    // if (isTopping == 2) {
     //    if (drink == 1) {
     //        std::cout << "コーヒートッピングなし300円" << std::endl;
     //    } else if (drink == 2) {
@@ -100,37 +100,96 @@ int main()
     //    }
     //}
 
-    //int age; // 年齢
-    //int height; // 身長
-    //int isPearent; // 保護者同伴かどうか
+    // int age; // 年齢
+    // int height; // 身長
+    // int isPearent; // 保護者同伴かどうか
 
-    //std::cout << "年齢を入力してください" << std::endl;
-    //std::cin >> age;
-    //std::cout << "身長を入力してください" << std::endl;
-    //std::cin >> height;
-    //std::cout << "保護者同伴なら1、同伴でなければ2を入力してください" << std::endl;
-    //std::cin >> isPearent;
+    // std::cout << "年齢を入力してください" << std::endl;
+    // std::cin >> age;
+    // std::cout << "身長を入力してください" << std::endl;
+    // std::cin >> height;
+    // std::cout << "保護者同伴なら1、同伴でなければ2を入力してください" << std::endl;
+    // std::cin >> isPearent;
 
+    // if (age < 12 || isPearent == 1) {
+    //     std::cout << "保護者と一緒に乗れます" << std::endl;
+    // } else if (age >= 12 && height >= 120) {
+    //     std::cout << "乗れます" << std::endl;
+    // } else {
+    //     std::cout << "乗れません" << std::endl;
+    // }
 
+    // int day; // 曜日
+    //   std::cout << "曜日を数字で入力してください（日曜日:1、月曜日:2、火曜日:3、水曜日:4、木曜日:5、金曜日:6、土曜日:7）" << std::endl;
+    // std::cin >> day;
+    // if (day == 6 || day == 1) {
+    //     std::cout << "週末です" << std::endl;
+    // } else {
+    //     std::cout << "平日です" << std::endl;
+    // }
 
-    //if (age < 12 || isPearent == 1) {
-    //    std::cout << "保護者と一緒に乗れます" << std::endl;
-    //} else if (age >= 12 && height >= 120) {
-    //    std::cout << "乗れます" << std::endl;
-    //} else {
-    //    std::cout << "乗れません" << std::endl;
+    // enum class BossState {
+
+    //    idle,
+    //    Move,
+    //    Spin,
+    //    Dash,
+
+    //};
+    //// enumClassは型になるそれにClassを活用し所属をはっきり示した状態を入れる。
+    // BossState state = BossState::idle;
+
+    // switch (state) {
+    // case BossState::idle:
+
+    //    std::cout << "待機中" << std::endl;
+    //    break;
+    // case BossState::Move:
+    //    std::cout << "動いてます" << std::endl;
+    //    break;
+    // case BossState::Spin:
+
+    //    std::cout << "回っている" << std::endl;
+    //    break;
+    // case BossState::Dash:
+    //    std::cout << "走っている" << std::endl;
+    //    break;
+    // default:
+    //    break;
     //}
-    
-  //int day; // 曜日
-  //  std::cout << "曜日を数字で入力してください（日曜日:1、月曜日:2、火曜日:3、水曜日:4、木曜日:5、金曜日:6、土曜日:7）" << std::endl;
-  //std::cin >> day;
-  //if (day == 6 || day == 1) {
-  //    std::cout << "週末です" << std::endl;
-  //} else {
-  //    std::cout << "平日です" << std::endl;
-  //}
 
+    // for (int i = 0; i < 10; i++) {
 
+    //    std::cout << i << std::endl;
+    //}
+    // どんどん数字を引いていくfor文
+    // for (int i = 9; i > 0; i--) {
+    //    std::cout << i << std::endl;
+    //}
+    // i >= 1でも同じ結果になる　１以下か0未満
 
+    // for (int i = 0; i < 9; i++) {
+
+    //    std::cout << i << std::endl;
+    //    if (i == 5) {
+    //        break;
+    //    }
+    //
+    //}
+
+    // for (int i = 0; i < 10; i++) {
+    //
+    //     if (i == 5) {
+    //         continue;
+    //     }
+    //
+    //     std::cout << i << std::endl;
+    // }
+
+    int numbers[5] = { 10, 20, 30, 40, 50 }; // 固定長配列
+
+    for (int i = 0; i < 5; i++) {
+        std::cout << numbers[i] << std::endl;
+    }
     return 0;
 }

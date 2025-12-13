@@ -1,7 +1,7 @@
 #include <iostream>
 #include <list> //双方向リストを使うためにはこれをインクルードしろ！
-#include <stdlib.h>
-#include <vector> //これでベクター使えるって（コンテナのこと配列の強化版）
+//#include <stdlib.h>
+/*#include <vector> *///これでベクター使えるって（コンテナのこと配列の強化版）
 using namespace std; // stdを省略したいんすよー
 
 int main()
@@ -193,7 +193,6 @@ int main()
     cout << "2022年" << endl;
     for (list<string>::iterator itr = stations.begin(); itr != stations.end(); ++itr) {
         if (*itr == "Tamachi") {
-
             itr = stations.insert(itr, "Takanawa GateWay");
             ++itr;
         }

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <list> //双方向リストを使うためにはこれをインクルードしろ！
-//#include <stdlib.h>
-/*#include <vector> *///これでベクター使えるって（コンテナのこと配列の強化版）
+// #include <stdlib.h>
+/*#include <vector> */ // これでベクター使えるって（コンテナのこと配列の強化版）
 using namespace std; // stdを省略したいんすよー
 
 int main()

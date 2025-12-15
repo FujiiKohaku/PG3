@@ -2,7 +2,7 @@
 #include <array>
 #include <functional>
 #include <iostream>
-#include <list> //双方向リストを使うためにはこれをインクルードしろ！
+//#include <list> //双方向リストを使うためにはこれをインクルードしろ！
 #include <stdio.h>
 #include <stdlib.h>
 #include <string>

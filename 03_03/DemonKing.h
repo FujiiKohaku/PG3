@@ -2,7 +2,7 @@
 #include "Enemy.h"
 class DemonKing:public Enemy {
 	public:
-	DemonKing();
-	~DemonKing();
+	DemonKing()=default;
+	~DemonKing()=default;
 	void Attack() override;
 };

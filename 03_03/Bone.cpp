@@ -1,13 +1,6 @@
 #include "Bone.h"
 #include <stdio.h>
 
-Bone::Bone()
-{
-}
-
-Bone::~Bone()
-{
-}
 
 void Bone::Attack()
 {

@@ -3,8 +3,8 @@
 class Slime : public Enemy {
 
 public:
-    Slime();
-    ~Slime();
+    Slime() = default;
+    ~Slime() = default;
 
     void Attack() override;
 

@@ -3,7 +3,7 @@
 class Bone : public Enemy {
 
 public:
-    Bone();
-    ~Bone();
+    Bone()=default;
+    ~Bone()=default;
     void Attack() override;
 };

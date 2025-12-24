@@ -1,12 +1,6 @@
 #include "DemonKing.h"
 #include <stdio.h>
-DemonKing::DemonKing()
-{
-}
 
-DemonKing::~DemonKing()
-{
-}
 
 void DemonKing::Attack()
 {

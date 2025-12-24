@@ -12,7 +12,10 @@ Enemy::Enemy()
 {
     phaseIndex_ = 0;
 }
-
+
+Enemy::~Enemy()
+{
+}
 // Update関数
 void Enemy::Update()
 {

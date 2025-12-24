@@ -2,7 +2,6 @@
 #include <array>
 #include <functional>
 #include <iostream>
-//#include <list> //双方向リストを使うためにはこれをインクルードしろ！
 #include <stdio.h>
 #include <stdlib.h>
 #include <string>
@@ -26,79 +25,8 @@ bool compareStudent(const string& a, const string& b)
 
 int main(int argc, char const* argv[])
 {
-    //==================
-    // 整列(sort)
-    //==================
-    // int型の動的配列a (要素数5)
+
     vector<int> a = { -10, 321, -3, 50, 1 };
-
-    //
-
-    // cout << "全要素を表示します" << endl;
-    //// 全要素を表示
-    // for (int i = 0; i < a.size(); i++) {
-    //     cout << a[i] << endl;
-    // }
-
-    //// 昇順に並び替え
-    // sort(a.begin(), a.end()); // sort(先頭要素のイテレータ,末尾要素のイテレーター)
-    //// sortは小さい順番に並び替えてくれる関数
-
-    // cout << "全要素を表示します" << endl;
-    //// 全要素を表示
-    // for (int i = 0; i < a.size(); i++) {
-    //     cout << a[i] << endl;
-    // }
-
-    //==================
-    // 探索(find)
-    //==================
-    //// 探索したいvector用のイテレーター
-    // vector<int>::iterator it;
-    //// 指定した値を探索する
-    // it = find(a.begin(), a.end(), -3); // この関数は見つけたらその数字を返却し見つからなかったら末尾の次を返却
-    //// 指定した値が存在すれば
-    // if (it != a.end()) { // 末尾の次と一致しなければif文が通る
-    //     // ここに来るのは「見つかったとき」だけ
-    //     cout << *it << endl; // 見つけた要素を表示
-    // }
-
-    //// 指定した値を探索する
-    // it = find(a.begin(), a.end(), 99999); // これだと見つからないよ！
-    // if (it != a.end()) {
-
-    //    cout << *it << endl;
-    //}
-
-    ////======================
-    //// 要素数を得る
-    ////======================
-    // bool b_array[] = { true, false, true, true };
-
-    // size_t n_count = count(b_array, b_array + (sizeof(b_array)), true);
-    //// b_arraayこれは先頭要素　　　　b_array+ (sizeof(b_array)),これ末尾のやつ
-    // cout << n_count << endl;
-
-    ////======================
-    //// 逆順にする(reverse)
-    ////======================
-    // 今の並びを逆にしてしまうぞ
-    //  reverse(a.begin(), a.end());
-
-    // auto dump = [](auto a) { // ラムダ式というらしい
-    //     for (auto i : a) {
-    //         cout << i << "";
-    //     }
-    //     cout << endl;
-    // };
-
-    // array<int, 5> a1 { 1, 2, 3, 4, 5 }; // 固定長配列なので要素数をあらかじめ書かないといけないらしい
-    // array<int, 5> a2 { 1, 2, 3, 4, 5 };
-
-    // replace(a1.begin(), a1.end(), 3, 0); // 配列a1の３となっている要素を０に置き換え
-    // replace(a2.begin(), a2.end(), 2, 0); // 配列a2の2となっている要素を０に置き換え
-    // dump(a1);
-    // dump(a2);
 
     // 課題
 

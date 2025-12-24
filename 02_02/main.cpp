@@ -27,9 +27,8 @@ int RecursiveTotal(int hours)
 
 int main()
 {
-    int hours;
-    cout << "働く時間を入力してください> ";
-    cin >> hours;
+    int hours = 5;
+    cout << "働く時間を入力してください>(システムの都合により時間は固定) ";
 
     int normal = NormalWage(hours);
     int recursive = RecursiveTotal(hours);

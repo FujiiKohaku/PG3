@@ -4,11 +4,14 @@ void GamePlayScene::Initialize()
 {
 }
 
-void GamePlayScene::Update()
+void GamePlayScene::Update(char* keys, char* preKeys)
 {
+    if (keys[DIK_SPACE] && !preKeys[DIK_SPACE]) {
+        sceneState = CLEAR;
+    }
 }
 
 void GamePlayScene::Draw()
 {
-    std::cout << "GamePlayScene::Draw()" << std::endl;
+    Novice::ScreenPrintf(10, 10, "Game Play Scene");
 }

@@ -4,12 +4,13 @@ void TitleScene::Initialize()
 {
     // タイトルシーンの初期化処理
 }
-void TitleScene::Update()
+void TitleScene::Update(char* keys, char* preKeys)
 {
-    // タイトルシーンの更新処理
+    if (keys[DIK_SPACE] && !preKeys[DIK_SPACE]) {
+        sceneState = GAME;
+    }
 }
 void TitleScene::Draw()
 {
-    // タイトルシーンの描画処理
-    std::cout << "Title Scene" << std::endl;
+    Novice::ScreenPrintf(10, 10, "Title Scene");
 }

@@ -2,17 +2,32 @@
 
 GameManager::GameManager()
 {
-    currentScene_[Title] = std::make_unique<TitleScene>();
-    currentScene_[GamePlay] = std::make_unique<GamePlayScene>();
-    currentScene_[Crear] = std::make_unique<ClearScene>();
+    sceneArr_[TITLE] = std::make_unique<TitleScene>();
+    sceneArr_[GAME] = std::make_unique<GamePlayScene>();
+    sceneArr_[CLEAR] = std::make_unique<ClearScene>();
+
+    // 最初のシーン（タイトル）
+    currentSceneNo_ = TITLE;
+    
 }
 
 GameManager::~GameManager()
 {
 }
 
-int GameManager::Run()
+int GameManager::Run(char* keys, char* preKeys)
 {
+ 
+    prevSceneNo_ = currentSceneNo_;
+    currentSceneNo_ = sceneArr_[currentSceneNo_]->GetSceneState();
+
+  
+    if (prevSceneNo_ != currentSceneNo_) {
+        sceneArr_[currentSceneNo_]->Initialize();
+    }
+
+    sceneArr_[currentSceneNo_]->Update(keys,preKeys);
+    sceneArr_[currentSceneNo_]->Draw();
 
     return 0;
 }

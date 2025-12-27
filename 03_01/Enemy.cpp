@@ -1,4 +1,5 @@
 #include "Enemy.h"
+#include "Player.h"
 
 // ① フェーズの関数テーブル定義
 Enemy::StateFunc Enemy::phaseTable_[] = {
@@ -27,6 +28,7 @@ void Enemy::Update()
         phaseIndex_++;
     }
 }
+
 
 // 各フェーズの関数
 void Enemy::Approach()

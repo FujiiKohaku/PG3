@@ -32,6 +32,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_04", "03_04\03_04.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04_01", "04_01\04_01.vcxproj", "{F8C5CA9F-130A-4BF0-9BBB-4BADE045E646}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05_01", "05_01\05_01.vcxproj", "{09F0F9C2-FDAC-4678-A0F1-8AC94798533E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -136,6 +138,14 @@ Global
 		{F8C5CA9F-130A-4BF0-9BBB-4BADE045E646}.Release|x64.Build.0 = Release|x64
 		{F8C5CA9F-130A-4BF0-9BBB-4BADE045E646}.Release|x86.ActiveCfg = Release|x64
 		{F8C5CA9F-130A-4BF0-9BBB-4BADE045E646}.Release|x86.Build.0 = Release|x64
+		{09F0F9C2-FDAC-4678-A0F1-8AC94798533E}.Debug|x64.ActiveCfg = Debug|x64
+		{09F0F9C2-FDAC-4678-A0F1-8AC94798533E}.Debug|x64.Build.0 = Debug|x64
+		{09F0F9C2-FDAC-4678-A0F1-8AC94798533E}.Debug|x86.ActiveCfg = Debug|x64
+		{09F0F9C2-FDAC-4678-A0F1-8AC94798533E}.Debug|x86.Build.0 = Debug|x64
+		{09F0F9C2-FDAC-4678-A0F1-8AC94798533E}.Release|x64.ActiveCfg = Release|x64
+		{09F0F9C2-FDAC-4678-A0F1-8AC94798533E}.Release|x64.Build.0 = Release|x64
+		{09F0F9C2-FDAC-4678-A0F1-8AC94798533E}.Release|x86.ActiveCfg = Release|x64
+		{09F0F9C2-FDAC-4678-A0F1-8AC94798533E}.Release|x86.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

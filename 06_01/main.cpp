@@ -5,25 +5,27 @@
 
 std::mutex mtx;
 std::condition_variable cv;
-int turn = 1;
+int current = 1;
 
-void PrintThread(int myTurn)
+void Print(int myNumber)
 {
     std::unique_lock<std::mutex> lock(mtx);
 
-    cv.wait(lock, [&]() { return turn == myTurn; });
+    cv.wait(lock, [&]() {
+        return current == myNumber;
+    });
 
-    std::cout << "thread " << myTurn << std::endl;
+    std::cout << "thread " << myNumber << std::endl;
 
-    turn++;
+    current++;
     cv.notify_all();
 }
 
 int main()
 {
-    std::thread t1(PrintThread, 1);
-    std::thread t2(PrintThread, 2);
-    std::thread t3(PrintThread, 3);
+    std::thread t1(Print, 1);
+    std::thread t2(Print, 2);
+    std::thread t3(Print, 3);
 
     t1.join();
     t2.join();

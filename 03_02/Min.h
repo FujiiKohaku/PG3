@@ -1,18 +1,23 @@
 #pragma once
 #include <iostream>
-#include <typeinfo>
 
-// クラステンプレート宣言と定義
+template <typename T1, typename T2>
+T1 Min(T1 a, T2 b)
+{
+    if (a < b) {
+        return a;
+    } else {
+        return static_cast<T1>(b);
+    }
+}
+
+// クラステンプレート
 template <typename T1, typename T2>
 class MinClass {
 public:
-    // コンストラクタ
     MinClass(T1 a, T2 b);
 
-    // 2つの値を比べて小さい方を返す
-    auto Min();
-
-    // 結果を出力する関数
+    T1 MinValue();
     void Show();
 
 private:
@@ -20,9 +25,6 @@ private:
     T2 b_;
 };
 
-// ===== テンプレートの関数定義はヘッダに書く必要がある =====
-
-// コンストラクタ（普通の書き方）
 template <typename T1, typename T2>
 MinClass<T1, T2>::MinClass(T1 a, T2 b)
 {
@@ -30,17 +32,18 @@ MinClass<T1, T2>::MinClass(T1 a, T2 b)
     b_ = b;
 }
 
-
-// Min関数
 template <typename T1, typename T2>
-auto MinClass<T1, T2>::Min()
+T1 MinClass<T1, T2>::MinValue()
 {
-    return (a_ < b_) ? a_ : b_;
+    if (a_ < b_) {
+        return a_;
+    } else {
+        return static_cast<T1>(b_);
+    }
 }
 
-// Show関数
 template <typename T1, typename T2>
 void MinClass<T1, T2>::Show()
 {
-    std::cout << "Min = " << Min() << std::endl;
+    std::cout << "Min = " << MinValue() << std::endl;
 }

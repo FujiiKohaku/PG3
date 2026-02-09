@@ -26,7 +26,7 @@ int main()
         }
     };
 
-    auto delayReveal = [&](void (*fn)(int, int), unsigned int delayMs, int roll, int userGuess) {
+    auto delayReveal = [&](void (*fn)(int, int), unsigned int delayMs, int roll, int userGuess) { 
         printf("サイコロを振っています\n");
         Sleep(delayMs);
         fn(roll, userGuess);

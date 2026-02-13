@@ -7,7 +7,7 @@ int NormalWage(int hours)
     return 1226 * hours;
 }
 
-// 再帰的な賃金（最初100円、次から前の2倍＋50円）
+// 再帰的な賃金（最初100円、次から前の2倍＋50円） 
 int RecursiveWage(int hour)
 { 
     if (hour == 1) {

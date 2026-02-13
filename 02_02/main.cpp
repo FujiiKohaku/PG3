@@ -9,7 +9,7 @@ int NormalWage(int hours)
 
 // 再帰的な賃金（最初100円、次から前の2倍＋50円）
 int RecursiveWage(int hour)
-{
+{ 
     if (hour == 1) {
         return 100; // 最初の1時間
     }
